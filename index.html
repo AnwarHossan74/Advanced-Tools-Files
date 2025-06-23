@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Anwar Cable TV - Local Cable TV Broadcast Software with Automatic Player, Time Schedule Ads, Live Telecast, Prayer Times, and All Services">
+    <meta name="keywords" content="cable tv, broadcast software, video player, prayer times, live telecast, bangladesh, anwar cable tv">
+    <meta name="author" content="Anwar - Anwar Cable TV">
+    <meta name="robots" content="index, follow">
+    <title>Anwar Cable TV - Professional Broadcast Software & All Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo-section">
+                <div class="logo-animation">
+                    <i class="fas fa-tv"></i>
+                </div>
+                <h1>Anwar Cable TV</h1>
+                <p>Professional Broadcast Software & All Services</p>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>01712082174</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>tajuartlakshmipur@gmail.com</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Video Player Section -->
+        <section class="video-section">
+            <div class="video-container">
+                <video id="mainVideo" controls autoplay muted>
+                    <source src="" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-overlay">
+                    <div class="live-indicator">
+                        <span class="live-dot"></span>
+                        LIVE
+                    </div>
+                    <div class="next-show">
+                        <span>Next: <span id="nextMovie">Loading...</span></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Information Panel -->
+        <section class="info-panel">
+            <div class="info-grid">
+                <!-- Time and Date -->
+                <div class="info-card time-card">
+                    <h3><i class="fas fa-clock"></i> Time & Date</h3>
+                    <div id="currentTime" class="time-display"></div>
+                    <div id="currentDate" class="date-display"></div>
+                </div>
+
+                <!-- Prayer Times -->
+                <div class="info-card prayer-card">
+                    <h3><i class="fas fa-mosque"></i> Prayer Times</h3>
+                    <div class="prayer-times">
+                        <div class="prayer-item">
+                            <span>Fajr:</span>
+                            <span id="fajr-time">04:30</span>
+                        </div>
+                        <div class="prayer-item">
+                            <span>Dhuhr:</span>
+                            <span id="dhuhr-time">12:15</span>
+                        </div>
+                        <div class="prayer-item">
+                            <span>Asr:</span>
+                            <span id="asr-time">15:45</span>
+                        </div>
+                        <div class="prayer-item">
+                            <span>Maghrib:</span>
+                            <span id="maghrib-time">18:20</span>
+                        </div>
+                        <div class="prayer-item">
+                            <span>Isha:</span>
+                            <span id="isha-time">19:45</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sports Scores -->
+                <div class="info-card sports-card">
+                    <h3><i class="fas fa-futbol"></i> Sports Scores</h3>
+                    <div class="sports-scores">
+                        <div class="score-item">
+                            <span class="sport-type">Football</span>
+                            <span class="score">Team A 2 - 1 Team B</span>
+                        </div>
+                        <div class="score-item">
+                            <span class="sport-type">Cricket</span>
+                            <span class="score">Bangladesh 245/6 (45.2)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Breaking News -->
+                <div class="info-card news-card">
+                    <h3><i class="fas fa-newspaper"></i> Breaking News</h3>
+                    <div class="news-ticker">
+                        <div id="newsContent" class="news-content">
+                            <span>Welcome to Anwar Cable TV - Your trusted source for entertainment and information!</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Advertisement Sections -->
+        <section class="advertisement-section">
+            <!-- Scrolling Advertisement -->
+            <div class="scrolling-ad">
+                <div class="ad-content">
+                    <span>🎬 New Movies Every Week | 📺 24/7 Entertainment | 📞 Call: 01712082174</span>
+                </div>
+            </div>
+
+            <!-- L-Type Advertisement -->
+            <div class="l-type-ad">
+                <div class="ad-banner">
+                    <h4>Special Offer!</h4>
+                    <p>Premium Package - 50% Off</p>
+                    <button class="ad-btn">Learn More</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Buttons -->
+        <section class="services-section">
+            <h2><i class="fas fa-cogs"></i> All Services</h2>
+            <div class="service-buttons">
+                <button class="service-btn" data-service="live">
+                    <i class="fas fa-broadcast-tower"></i>
+                    Live Telecast
+                </button>
+                <button class="service-btn" data-service="movies">
+                    <i class="fas fa-film"></i>
+                    Movies
+                </button>
+                <button class="service-btn" data-service="songs">
+                    <i class="fas fa-music"></i>
+                    Songs
+                </button>
+                <button class="service-btn" data-service="news">
+                    <i class="fas fa-newspaper"></i>
+                    News
+                </button>
+                <button class="service-btn" data-service="sports">
+                    <i class="fas fa-trophy"></i>
+                    Sports
+                </button>
+                <button class="service-btn" data-service="prayer">
+                    <i class="fas fa-pray"></i>
+                    Prayer Times
+                </button>
+                <button class="service-btn" data-service="schedule">
+                    <i class="fas fa-calendar"></i>
+                    Schedule
+                </button>
+                <button class="service-btn" data-service="settings">
+                    <i class="fas fa-cog"></i>
+                    Settings
+                </button>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section">
+            <h2><i class="fas fa-star"></i> Key Features</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <i class="fas fa-video"></i>
+                    <h4>All Video Formats</h4>
+                    <p>Support for MP4, AVI, MKV, MOV, and more</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-robot"></i>
+                    <h4>Fully Automatic Player</h4>
+                    <p>Smart scheduling and automatic playback</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-clock"></i>
+                    <h4>Time Schedule Ads</h4>
+                    <p>Automated advertisement scheduling</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-desktop"></i>
+                    <h4>Dual Monitor Support</h4>
+                    <p>1024x768 resolution optimized</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-globe"></i>
+                    <h4>Multi-Language</h4>
+                    <p>English and Bangladeshi support</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-cross-platform"></i>
+                    <h4>Cross-Platform</h4>
+                    <p>Runs on any operating system</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section">
+            <div class="about-content">
+                <h2><i class="fas fa-user"></i> About Anwar Cable TV</h2>
+                <p>Anwar Cable TV is your premier local cable television broadcast software, providing comprehensive entertainment and information services. Our system features automatic video playback, scheduled advertisements, live telecast capabilities, and much more.</p>
+                <div class="contact-details">
+                    <h3>Contact Information</h3>
+                    <div class="contact-grid">
+                        <div class="contact-detail">
+                            <i class="fas fa-user"></i>
+                            <span><strong>Name:</strong> Anwar</span>
+                        </div>
+                        <div class="contact-detail">
+                            <i class="fas fa-phone"></i>
+                            <span><strong>Mobile:</strong> 01712082174</span>
+                        </div>
+                        <div class="contact-detail">
+                            <i class="fas fa-envelope"></i>
+                            <span><strong>Email:</strong> tajuartlakshmipur@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Anwar Cable TV</h4>
+                <p>Professional Broadcast Software & All Services</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#live">Live Telecast</a></li>
+                    <li><a href="#movies">Movies</a></li>
+                    <li><a href="#news">News</a></li>
+                    <li><a href="#sports">Sports</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>📞 01712082174</p>
+                <p>📧 tajuartlakshmipur@gmail.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Anwar Cable TV. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html> 
